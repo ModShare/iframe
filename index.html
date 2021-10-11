@@ -393,20 +393,26 @@
     };
     run().catch(handleError);
   </script>
-<iframe id="inlineFrameExample" title="Inline Frame Example" <iframe id="inlineFrameExample" title="Inline Frame Example" width="600" height="450" src="https://survivcreator.github.io/Battlefront-Redux/result%20(7).html">
-</iframe>
+<iframe width="480" height="360" src="https://survivcreator.github.io/Battlefront-Redux/result%20(7).html"></iframe>
+
+<div class="resp-container">
+    <iframe class="resp-iframe" src="https://survivcreator.github.io/Battlefront-Redux/result%20(7).html"></iframe>
+</div>
 <style>
-  iframe {
-    width: "600";
-    height: "450";
-    position: fixed;
-    z-index: 1000;
-    border-radius: 20px;
-    top: 180px; left: 250px;
-  }  
-  .output {
-    background: #eee;
-    }
+    
+  resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 75%;
+}
+  resp-iframe {
+    position: absolute;
+    top: 180;
+    left: 250;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 </style>
 </body>
 </html>
